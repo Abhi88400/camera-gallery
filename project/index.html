@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="video-class">
+        <video autoplay src=""></video>
+    </div>
+
+    <div class="record-btn">
+        <button class="record">Record</button>
+    </div>
+
+    <div class="capture-btn">
+        <button class="capture">capture</button>
+    </div>
+    <canvas id="canvas" style="overflow:auto"></canvas>
+    <span class="material-icons gallery">
+        collections
+        </span>
+
+</body> 
+<script src="db.js"></script>
+<script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+<script src="camera.js"></script>
+<script>
+    let gallery= document.querySelector('.gallery');
+    gallery.addEventListener("click" , () => {
+        location.assign('./db.html')
+    })
+</script>
+
+</html>
+
+<!--<video controls src=""></video>  controls is used for demo purpose -->
+<!-- if u can use autoplay then we do not need to play the video -->
